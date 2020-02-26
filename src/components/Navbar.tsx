@@ -1,11 +1,13 @@
 import React, { CSSProperties } from "react"
 
-export default class Layout extends React.Component{
-
+interface Props {
+    onClickHeader: () => void
+}
+export default class Navbar extends React.Component<Props>{
     render() {
         return (
             <nav style={navStyle}>
-                <h1 style={headerStyle}>React <br/>Playground</h1>
+                <h1 style={headerStyle} onClick={this.props.onClickHeader}>React <br/>Playground</h1>
             </nav>
         )
     }
@@ -15,7 +17,6 @@ const navStyle: CSSProperties = {
     position:"absolute",
 
     padding: ".5rem",
-    // background:"#ea05",
 
     display: "flex",
     justifyContent: "center",
@@ -30,5 +31,7 @@ const headerStyle: CSSProperties = {
     fontSize: "3rem",
     
     letterSpacing: "-.3rem",
-    lineHeight: "2.5rem"
+    lineHeight: "2.5rem",
+
+    cursor: "pointer",
 }

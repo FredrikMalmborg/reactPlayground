@@ -7,7 +7,7 @@ interface Props {
 
 
 
-export default class Layout extends React.Component<Props> {
+export default class NavigationItem extends React.Component<Props> {
     render() {
         const {sectionTitle, img} = this.props
 
