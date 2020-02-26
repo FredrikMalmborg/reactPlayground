@@ -39,7 +39,7 @@ const textStyle: CSSProperties = {
     textTransform: "uppercase",
     fontSize:"40vh",
     
-    // color:"#4faca188" // sky
+    // color:"#4faca1" // sky
     color:"#eca13a" // forest
     // color:"#deeaf6" // sea
 }

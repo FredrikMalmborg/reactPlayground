@@ -1,15 +1,18 @@
 import React, { CSSProperties } from "react"
 
 import Navbar from "./Navbar"
-import Content from "./Content"
+import ViewContainer from "./ViewContainer"
 
-export default function Layout() {
-    return (
-        <div style={bodyStyle}>
-            <Navbar />
-            <Content />
-        </div>
-    )
+export default class Layout extends React.Component {
+
+    render() {
+        return (
+            <div style={bodyStyle}>
+                <Navbar />
+                <ViewContainer />
+            </div>
+        )
+    }
 }
 
 const bodyStyle: CSSProperties = {
